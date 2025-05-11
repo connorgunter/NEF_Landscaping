@@ -1,0 +1,14 @@
+.slider-container {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    position: center;
+  }
+  
+  .slider-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.6s ease-in-out;
+  }
+  

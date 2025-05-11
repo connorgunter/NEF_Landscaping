@@ -2,11 +2,13 @@
     width: 100%;
     max-height: 500px;
     overflow: hidden;
-    position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .slider-image {
-    width: 400px;
+    width: 75%;
     height: auto;
     object-fit: cover;
     transition: opacity 0.6s ease-in-out;

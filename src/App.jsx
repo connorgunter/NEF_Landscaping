@@ -4,8 +4,9 @@ import Slideshow from "./pages/Slideshow/slideshow";
 import Form from "./pages/Form/form";
 
 const images = [
-  "../images/NEF_Landscaping_Logo.png",
-  "../images/Sidewaystreefinaldraft.png"
+  // "../images/finalproduct.png",
+  // "../images/image.png",
+  "../images/lawn.jpeg"
 ];
 
 function App() {

@@ -8,9 +8,8 @@
   }
   
   .slider-image {
-    width: 75%;
+    width: 60%;
     height: auto;
-    object-fit: cover;
     transition: opacity 0.6s ease-in-out;
   }
   

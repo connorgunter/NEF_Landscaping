@@ -29,3 +29,7 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
+
+.contact {
+    text-align: center;
+}

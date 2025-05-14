@@ -5,9 +5,11 @@ import Slideshow from "./pages/Slideshow/slideshow";
 import Form from "./pages/Form/form";
 import Footer from "./components/Footer/footer";
 const images = [
-  // "../images/finalproduct.png",
-  // "../images/image.png",
-  "../images/lawn.jpeg"
+  "../images/lawn2.jpeg",
+  "../images/lawn.jpeg",
+  "../images/lawn3.jpg",
+  "../images/lawn4.jpg",
+
 ];
 
 function App() {

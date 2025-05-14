@@ -1,15 +1,89 @@
 .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 1rem;
-    background-color: var(--white);
-  }
-  
-  .header-image {
-    width: 100%;
-    max-width: 300px; /* 🔽 Reduced from 500px */
-    height: auto;
-    object-fit: contain;
-  }
-  
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f0f5f0;
+}
+
+.tree-logo-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 1rem;
+}
+
+.tree-logo {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tree-logo-container:hover .tree-logo {
+  animation: sway 2s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.falling-leaf {
+  position: absolute;
+  width: 217px;
+  height: 217px;
+  pointer-events: none;
+  z-index: 3;
+  top: -34px;
+  left: -5px;
+}
+
+
+.falling-leaf img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1;
+  transform: translate(0, 0) rotate(0deg);
+}
+
+.tree-logo-container:hover .leaf1 img {
+  animation: leafFall1 4.5s ease-in forwards;
+}
+.tree-logo-container:hover .leaf2 img {
+  animation: leafFall2 5s ease-in forwards;
+}
+.tree-logo-container:hover .leaf3 img {
+  animation: leafFall3 4.8s ease-in forwards;
+}
+
+
+
+@keyframes leafFall1 {
+  0%   { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(-50px, 100vh) rotate(180deg); opacity: 0; }
+}
+
+@keyframes leafFall2 {
+  0%   { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(30px, 100vh) rotate(240deg); opacity: 0; }
+}
+
+@keyframes leafFall3 {
+  0%   { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(-40px, 100vh) rotate(300deg); opacity: 0; }
+}
+
+
+.main-title {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #2f4f2f;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4a6a4a;
+}

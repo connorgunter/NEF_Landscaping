@@ -4,13 +4,13 @@ import Header from "./components/Header/header";
 import Slideshow from "./pages/Slideshow/slideshow";
 import Form from "./pages/Form/form";
 import Footer from "./components/Footer/footer";
-const images = [
-  "../images/lawn2.jpeg",
-  "../images/lawn.jpeg",
-  "../images/lawn3.jpg",
-  "../images/lawn4.jpg",
+import lawn1 from './assets/lawn.jpeg';
+import lawn2 from './assets/lawn2.jpeg';
+import lawn3 from './assets/lawn3.jpg';
+import lawn4 from './assets/lawn4.jpg';
 
-];
+const images = [lawn1, lawn2, lawn3, lawn4];
+
 
 function App() {
   return (

@@ -97,3 +97,38 @@
 .img-4 {
   object-position: center 65%;
 }
+
+
+@media (max-width: 768px) {
+  .slider-wrapper {
+    height: 50vh; /* Reduce height on mobile */
+    max-height: 400px;
+  }
+
+  .slider-image {
+    object-position: center center;
+  }
+
+  .nav-button {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .nav-button.prev {
+    left: 5px;
+  }
+
+  .nav-button.next {
+    right: 5px;
+  }
+
+  .dots-container {
+    margin-top: 8px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+  }
+}

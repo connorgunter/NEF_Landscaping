@@ -1,18 +1,18 @@
 .header-container {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem 2rem;
   background-color: #f0f5f0;
 }
 
 .tree-logo-container {
   position: relative;
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 150px;
   margin: 0 auto 1rem;
 }
 
 .tree-logo {
-  width: 100%;
+  width: 300px;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
@@ -32,12 +32,12 @@
 
 .falling-leaf {
   position: absolute;
-  width: 217px;
-  height: 217px;
+  width: 305px;
+  height: 305px;
   pointer-events: none;
   z-index: 3;
-  top: -34px;
-  left: -5px;
+  top: -62px;
+  left: -15px;
 }
 
 
@@ -87,3 +87,33 @@
   font-size: 1.2rem;
   color: #4a6a4a;
 }
+
+.main-nav {
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2f4f2f;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  border-bottom: 2px solid transparent; 
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-links a:hover {
+  color: Black;
+  background: #138f15;
+  border-radius: 5px;
+}
+

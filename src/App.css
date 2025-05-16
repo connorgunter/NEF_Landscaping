@@ -19,3 +19,29 @@
     font-family: 'Helvetica Neue', sans-serif;
   }
   
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #2f4f2f;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    opacity: 0.8;
+  }
+  
+  .back-to-top:hover {
+    background-color: #4a6a4a;
+    transform: translateY(-4px);
+  }
+  

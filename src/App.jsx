@@ -19,10 +19,16 @@ const images = [lawn2, lawn3, lawn4, lawn5, lawn6];
 function App() {
   return (
     <div>
+      <section id="home">
       <Header />
+      </section>
       <Slideshow images={images} interval={45000}/>
       {/* other sections of your site */}
+      <section id="contact">
       <Form />
+      </section>
+      <a href="#home" className="back-to-top" aria-label="Back to Top">↑</a>
+
       <Footer />
     </div>
   );

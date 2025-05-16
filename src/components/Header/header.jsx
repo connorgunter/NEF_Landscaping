@@ -1,15 +1,12 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './header.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Header.css";
 
-import treeLogo from '../../assets/cropped2.png';
-import leaf1 from '../../assets/leaf1.png';
-import leaf2 from '../../assets/leaf2.png';
-import leaf3 from '../../assets/leaf3.png';
-
-
-
+import treeLogo from "../../assets/cropped2.png";
+import leaf1 from "../../assets/leaf1.png";
+import leaf2 from "../../assets/leaf2.png";
+import leaf3 from "../../assets/leaf3.png";
 
 const Header = () => {
   useEffect(() => {
@@ -24,9 +21,16 @@ const Header = () => {
         <div className="falling-leaf leaf2"><img src={leaf2} alt="Leaf 2" /></div>
         <div className="falling-leaf leaf3"><img src={leaf3} alt="Leaf 3" /></div>
       </div>
-
-      <h1 className="main-title" data-aos="zoom-in">New England’s Finest Landscaping</h1>
-      <p className="subtitle" data-aos="fade-up">Landscaping & Design LLC</p>
+      <br />
+      <br />
+      {/* 🔽 Navigation Bar */}
+      <nav className="main-nav">
+        <ul className="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
   );
 };

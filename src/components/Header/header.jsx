@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./Header.css";
+import "./header.css";
 
 import treeLogo from "../../assets/cropped2.png";
 import leaf1 from "../../assets/leaf1.png";

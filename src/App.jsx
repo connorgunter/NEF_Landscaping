@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/header";
 import Slideshow from "./pages/Slideshow/slideshow";
+import ServicesList from "./pages/ServicesList/serviceslist";
 import Form from "./pages/Form/form";
 import Footer from "./components/Footer/footer";
 // import lawn1 from './assets/lawn.jpeg';
@@ -22,13 +23,18 @@ function App() {
       <section id="home">
       <Header />
       </section>
+      
       <Slideshow images={images} interval={45000}/>
-      {/* other sections of your site */}
+      
+      <section id="services">
+      <ServicesList />
+      </section>
+      
       <section id="contact">
       <Form />
       </section>
+      
       <a href="#home" className="back-to-top" aria-label="Back to Top">↑</a>
-
       <Footer />
     </div>
   );

@@ -1,0 +1,44 @@
+.serviceslist-container {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .services {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #2f4f2f;
+  }
+  
+  .serviceslist {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-item h2 {
+    font-size: 1.4rem;
+    color: #2f4f2f;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

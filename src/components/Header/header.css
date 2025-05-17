@@ -1,7 +1,8 @@
 .header-container {
   text-align: center;
-  padding: 0.5rem 1rem 2rem;
+  /* padding: 0.5rem 1rem 2rem; */
   background-color: #f0f5f0;
+  width: 100%;
 }
 
 .tree-logo-container {
@@ -115,5 +116,42 @@
   color: Black;
   background: #138f15;
   border-radius: 5px;
+}
+
+
+.header-background {
+  width: 100vw;
+  background: url('../../assets/landscape-bg.png') center 75% no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #f0f5f0;
+  padding: 3rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 768px) {
+  .header-background {
+    background-size: cover;
+    background-position: center 75%;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  .tree-logo {
+    max-width: 220px;
+  }
+
+  .falling-leaf {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    pointer-events: none;
+    z-index: 3;
+    top: -52px;
+    left: 23px;
+  }
 }
 

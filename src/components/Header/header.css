@@ -140,11 +140,11 @@
     padding: 2rem 2rem 2rem 2rem;
   }
 
-  .tree-logo {
+  /* .tree-logo {
     max-width: 220px;
-  }
+  } */
 
-  .falling-leaf {
+  /* .falling-leaf {
     position: absolute;
     width: 230px;
     height: 230px;
@@ -152,6 +152,6 @@
     z-index: 3;
     top: -52px;
     left: 23px;
-  }
+  } */
 }
 

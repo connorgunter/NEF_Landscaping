@@ -103,20 +103,30 @@
 }
 
 .nav-links a {
+  position: relative;
   text-decoration: none;
   font-weight: 600;
-  color: #2f4f2f;
+  color: black;
   font-size: 1rem;
   transition: color 0.2s ease;
-  border-bottom: 2px solid transparent; 
-  padding: 0.2rem 0.5rem;
+  padding-bottom: 0.3rem; 
 }
 
-.nav-links a:hover {
-  color: Black;
-  background: #138f15;
-  border-radius: 5px;
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #138f15;
+  transition: width 0.3s ease;
 }
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 
 
 .header-background {
@@ -145,7 +155,7 @@
   } */
 
   /* .falling-leaf {
-    position: absolute;
+    position: absolute;`
     width: 230px;
     height: 230px;
     pointer-events: none;

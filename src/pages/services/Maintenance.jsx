@@ -1,5 +1,5 @@
 import Header from "../../components/Header/header";
-import Gallery from "../../components/Gallery/gallery";
+import Gallery from "../../components/Gallery/Gallery";
 import m1 from "../../assets/before1.png";
 import m2 from "../../assets/after1.png";
 import m3 from "../../assets/before2.png";

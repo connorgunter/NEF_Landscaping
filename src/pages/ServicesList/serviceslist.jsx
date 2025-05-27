@@ -22,9 +22,10 @@ const ServicesList = () => {
         <div className="service-item">
           <h2>Native Plant Landscaping & Garden Design</h2>
           <p>
-            Custom landscape design with native plants tailored to your home.
-            NEF specializes in sustainable, climate-smart planting and landscape
-            architecture that thrives naturally.
+            Custom landscape design with plants native to your specific zone -
+            marked by the USDA Plant Hardiness Zone Map. NEF specializes in
+            sustainable, climate-smart planting and landscape architecture that
+            thrives naturally.
           </p>
           <Link to="/services/nativeplants" className="learn-more-button">
             Learn More

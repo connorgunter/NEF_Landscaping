@@ -1,35 +1,70 @@
 form {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-form input,
-form textarea,
-form button {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: #f3f8f3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dbe5db;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  form input,
+  form textarea,
+  form button {
     width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    border-radius: 8px;
     font-size: 16px;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
+    font-family: inherit;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input,
+  form textarea {
+    border: 1px solid #c3d6c3;
+    background-color: #ffffff;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #138f17;
+    box-shadow: 0 0 0 3px rgba(19, 143, 23, 0.2);
+    outline: none;
+  }
+  
+  form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  form button {
+    background-color: #138f17;
+    color: #fff;
+    font-weight: bold;
     border: none;
     cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
-}
-
-.contact {
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #0f7a13;
+  }
+  
+  .contact {
     text-align: center;
-}
+    font-size: 2rem;
+    color: #2f4f2f;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      margin: 40px 16px;
+      padding: 20px;
+    }
+  }
+  

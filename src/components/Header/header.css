@@ -1,6 +1,5 @@
 .header-container {
   text-align: center;
-  /* padding: 0.5rem 1rem 2rem; */
   background-color: #f0f5f0;
   width: 100%;
 }
@@ -127,8 +126,6 @@
   width: 100%;
 }
 
-
-
 .header-background {
   width: 100vw;
   background: url('../../assets/landscape-bg.png') center 75% no-repeat;
@@ -149,19 +146,30 @@
     background-position: center 75%;
     padding: 2rem 2rem 2rem 2rem;
   }
-
-  /* .tree-logo {
-    max-width: 220px;
-  } */
-
-  /* .falling-leaf {
-    position: absolute;`
-    width: 230px;
-    height: 230px;
-    pointer-events: none;
-    z-index: 3;
-    top: -52px;
-    left: 23px;
-  } */
 }
 
+.nav-link-btn {
+  all: unset;
+  position: relative;
+  font-weight: 600;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+.nav-link-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #138f15;
+  transition: width 0.3s ease;
+}
+
+.nav-link-btn:hover::after {
+  width: 100%;
+}

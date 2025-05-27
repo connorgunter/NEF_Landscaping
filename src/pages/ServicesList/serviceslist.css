@@ -42,3 +42,22 @@
     color: #555;
   }
   
+  .learn-more-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: #138f17;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .learn-more-button:hover {
+    background-color: #0f7a13;
+    transform: translateY(-2px);
+  }
+  

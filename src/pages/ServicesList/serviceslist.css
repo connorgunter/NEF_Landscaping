@@ -23,8 +23,15 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 280px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 380px; /* Optional: adjusts card height uniformly */
   }
+  
   
   .service-item:hover {
     transform: translateY(-5px);

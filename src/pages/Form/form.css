@@ -1,4 +1,4 @@
-form {
+/* form {
     max-width: 500px;
     margin: 60px auto;
     padding: 30px;
@@ -65,6 +65,99 @@ form {
     form {
       margin: 40px 16px;
       padding: 20px;
+    }
+  }
+   */
+
+   form {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #f9fdf9, #edf7ed);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Floating Labels */
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 16px 14px 16px 14px;
+    font-size: 16px;
+    border: 1px solid #c3d6c3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: inherit;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    background-color: #ffffff;
+    padding: 0 6px;
+    color: #777;
+    font-size: 16px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  
+  /* Float on focus */
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label,
+  .form-group textarea:focus + label,
+  .form-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    font-size: 13px;
+    color: #138f17;
+  }
+  
+  /* Active Input Effects */
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #138f17;
+    box-shadow: 0 0 0 3px rgba(19, 143, 23, 0.15);
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
+  
+  /* Submit Button */
+  form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: #138f17;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #0f7a13;
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      margin: 40px 16px;
+      padding: 24px;
     }
   }
   

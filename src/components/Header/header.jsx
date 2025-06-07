@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./header.css";
@@ -11,19 +11,27 @@ import leaf3 from "../../assets/leaf3.png";
 
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
   const scrollToSection = (id) => {
-    navigate("/");
-    setTimeout(() => {
+    if (location.pathname !== "/") {
+      navigate("/", { replace: false });
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
       const section = document.getElementById(id);
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100);
+    }
   };
 
   return (
@@ -41,8 +49,11 @@ const Header = () => {
             <img src={leaf3} alt="Leaf 3" />
           </div>
         </div>
+
+        {/* ✅ Restoring the spacing below the logo */}
         <br />
         <br />
+
         <nav className="main-nav">
           <ul className="nav-links">
             <li>
@@ -64,7 +75,7 @@ const Header = () => {
             <li>
               <button
                 className="nav-link-btn"
-                onClick={() => scrollToSection("contact")}
+                onClick={() => navigate("/contact")}
               >
                 Contact
               </button>

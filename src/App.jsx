@@ -11,6 +11,7 @@ import Footer from "./components/Footer/footer";
 import Maintenance from "./pages/services/Maintenance";
 import Native from "./pages/services/Native";
 import Hardscape from "./pages/services/Hardscape";
+import Contact from "./pages/Contact/Contact"; // ✅ New Contact page import
 
 import lawn2 from "./assets/lawn2.jpeg";
 import lawn3 from "./assets/lawn3.jpg";
@@ -43,9 +44,9 @@ function App() {
               <ServicesList />
             </section>
 
-            <section id="contact">
+            {/* <section id="contact">
               <Form />
-            </section>
+            </section> */}
 
             <button
               className="back-to-top"
@@ -62,10 +63,10 @@ function App() {
           </div>
         }
       />
-
       <Route path="/services/maintenance" element={<Maintenance />} />
       <Route path="/services/nativeplants" element={<Native />} />
       <Route path="/services/hardscape" element={<Hardscape />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

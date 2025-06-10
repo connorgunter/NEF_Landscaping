@@ -8,7 +8,6 @@ body {
   padding: 60px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #2f2f2f;
-  background: linear-gradient(135deg, #f4f7f6, #ffffff);
   border-radius: 12px;
 }
 
@@ -172,4 +171,44 @@ body {
 
 .cta-button:hover {
   background-color: #2fa57a;
+}
+
+.offering-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.offering-item {
+  background: #ffffff;
+  border-left: 5px solid #39b98f;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.offering-item:hover {
+  transform: translateY(-5px);
+}
+
+.offering-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 10px;
+  color: #39b98f;
+}
+
+.offering-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #174c3c;
+}
+
+.offering-item p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 0;
 }

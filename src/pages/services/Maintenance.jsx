@@ -74,36 +74,45 @@ const Maintenance = () => {
             </p>
           </SwiperSlide>
         </Swiper>
-        <ul className="offering-list">
-          <li data-aos="fade-up">
+        <div className="offering-list">
+          <div className="offering-item" data-aos="fade-up">
+            <span className="offering-icon">🌱</span>
             <h3>Weekly Lawn Mowing & Edging</h3>
-            <p>
-              Consistent, clean cuts and crisp edges that keep your lawn looking
-              sharp all season long.
-            </p>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="100">
+            <p>Consistent, clean cuts and crisp edges all season long.</p>
+          </div>
+          <div
+            className="offering-item"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <span className="offering-icon">✂️</span>
             <h3>Mulching, Pruning & Bed Maintenance</h3>
             <p>
-              Maintain vibrant garden beds and healthy plant growth with expert
-              care and precision.
+              Keep garden beds tidy and plants healthy with professional care.
             </p>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="200">
+          </div>
+          <div
+            className="offering-item"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <span className="offering-icon">🍂</span>
             <h3>Spring & Fall Cleanups</h3>
             <p>
-              Comprehensive seasonal cleanups to prepare your landscape for the
-              months ahead.
+              Seasonal cleanups to prepare your landscape for changing weather.
             </p>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="300">
+          </div>
+          <div
+            className="offering-item"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <span className="offering-icon">❄️</span>
             <h3>Snow Plowing During Winter</h3>
-            <p>
-              Reliable snow removal services to keep your driveways and walkways
-              clear and safe.
-            </p>
-          </li>
-        </ul>
+            <p>Safe and reliable snow removal for driveways and walkways.</p>
+          </div>
+        </div>
+
         <div className="cta-wrapper" data-aos="zoom-in">
           <Link to="/contact" className="cta-button">
             Get a Free Estimate

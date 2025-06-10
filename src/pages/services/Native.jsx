@@ -1,20 +1,92 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
+
 import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/footer";
+import "./native.css";
 
-const NativePlants = () => (
-  <div className="service-detail">
-    <Header />
-    <h1>Native Plant Landscaping & Garden Design</h1>
-    <p>
-      Custom landscape design with native plants tailored to your home. NEF
-      specializes in sustainable, climate-smart planting and landscape
-      architecture that thrives naturally.
-    </p>
-    <p>
-      Our expert team creates beautiful, functional gardens that support local
-      ecosystems while enhancing your outdoor space. From pollinator-friendly
-      gardens to serene native plant landscapes, we design with nature in mind.
-    </p>
-  </div>
-);
+const Native = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
 
-export default NativePlants;
+  return (
+    <>
+      <Header />
+      <div className="native-page">
+        <h1 className="native-title">Native Plant Landscaping</h1>
+        <p className="native-intro" data-aos="fade-up">
+          Native plants are the backbone of sustainable landscaping—requiring
+          less water, supporting wildlife, and thriving naturally in our
+          environment. At NEF, we help create thriving, low-maintenance gardens
+          that support local ecosystems.
+        </p>
+
+        <div className="native-benefits">
+          {[
+            {
+              title: "Low Maintenance",
+              desc: "Thrives without constant watering or chemical fertilizers.",
+              icon: "🌱",
+            },
+            {
+              title: "Wildlife Habitat",
+              desc: "Provides shelter and food for pollinators and birds.",
+              icon: "🦋",
+            },
+            {
+              title: "Saves Water",
+              desc: "Perfectly adapted to local rainfall patterns.",
+              icon: "💧",
+            },
+            {
+              title: "Chemical-Free",
+              desc: "No need for synthetic pesticides or herbicides.",
+              icon: "🧪",
+            },
+          ].map((item, idx) => (
+            <div
+              className="native-benefit"
+              key={idx}
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+            >
+              <span className="benefit-icon">{item.icon}</span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="native-examples" data-aos="fade-up">
+          <h2>Example Garden Concepts</h2>
+          <div className="examples-grid">
+            <div className="example">
+              <h4>Pollinator Garden</h4>
+              <p>Milkweed, Echinacea, Bee Balm — a haven for butterflies 🐝</p>
+            </div>
+            <div className="example">
+              <h4>Woodland Shade Garden</h4>
+              <p>Wild ginger, Ferns, Red Columbine — peaceful and shady 🌳</p>
+            </div>
+            <div className="example">
+              <h4>Drought-Tolerant Prairie</h4>
+              <p>Little bluestem, Yucca, Coneflower — built for sun ☀️</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="cta-wrapper" data-aos="zoom-in">
+          <Link to="/contact" className="cta-button">
+            Get a Native Landscape Quote
+          </Link>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default Native;

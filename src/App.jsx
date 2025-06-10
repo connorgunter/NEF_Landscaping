@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
+import { useNavigate } from "react-router-dom";
 
 import Header from "./components/Header/header";
 import Slideshow from "./pages/Slideshow/slideshow";
@@ -28,6 +29,8 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location.pathname]);
 
+  const navigate = useNavigate();
+
   return (
     <Routes>
       <Route
@@ -39,14 +42,25 @@ function App() {
             </section>
 
             <Slideshow images={images} interval={45000} />
+            <div className="cta-intro" data-aos="fade-up">
+              <h2>Interested in a custom maintenance plan?</h2>
+              <p>
+                Let NEF Landscaping take the work off your hands — get a free
+                estimate tailored to your property’s needs.
+              </p>
+            </div>
+            <div className="homepage-cta-wrapper">
+              <button
+                className="homepage-cta-button"
+                onClick={() => navigate("/contact")}
+              >
+                Get a Free Estimate
+              </button>
+            </div>
 
             <section id="services">
               <ServicesList />
             </section>
-
-            {/* <section id="contact">
-              <Form />
-            </section> */}
 
             <button
               className="back-to-top"

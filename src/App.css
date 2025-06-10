@@ -64,3 +64,43 @@ html, body {
     transform: translateY(-4px);
   }
   
+  .homepage-cta-wrapper {
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .homepage-cta-button {
+    background-color: #118f17;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .homepage-cta-button:hover {
+    background-color: #2fa57a;
+  }
+  
+  .cta-intro {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cta-intro h2 {
+    font-size: 1.8rem;
+    color: #174c3c;
+    margin-bottom: 10px;
+    padding-top: 35px;
+  }
+  
+  .cta-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  

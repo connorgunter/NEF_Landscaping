@@ -1,0 +1,67 @@
+.homepage-contact {
+    padding: 40px 20px;
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  .homepage-contact-title {
+    font-size: 1.8rem;
+    color: #174c3c;
+    margin-bottom: 0.25rem;
+  }
+  
+  .homepage-contact-subtext {
+    color: #4a6a4a;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .homepage-contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .homepage-contact-form input,
+  .homepage-contact-form textarea {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border: 1px solid #c0d9cd;
+    border-radius: 6px;
+    font-family: inherit;
+  }
+  
+  .homepage-contact-form input[name="phone"],
+  .homepage-contact-form textarea,
+  .homepage-contact-form button {
+    grid-column: span 2;
+  }
+  
+  .homepage-contact-form textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  .homepage-contact-form button {
+    background-color: #138f15;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    justify-self: center;
+  }
+  
+  .homepage-contact-form button:hover {
+    background-color: #0f7a13;
+  }
+  

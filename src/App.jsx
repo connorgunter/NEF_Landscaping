@@ -8,6 +8,7 @@ import Slideshow from "./pages/Slideshow/slideshow";
 import ServicesList from "./pages/ServicesList/serviceslist";
 import Form from "./pages/Form/form";
 import Footer from "./components/Footer/footer";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 import Maintenance from "./pages/services/Maintenance";
 import Native from "./pages/services/Native";
@@ -61,6 +62,7 @@ function App() {
             <section id="services">
               <ServicesList />
             </section>
+            <ContactForm />
 
             <button
               className="back-to-top"

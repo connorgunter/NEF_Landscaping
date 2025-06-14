@@ -1,6 +1,6 @@
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
-import Form from "../../pages/Form/form";
+import Form from "../../components/Form/form";
 import "./contact.css";
 
 const Contact = () => (

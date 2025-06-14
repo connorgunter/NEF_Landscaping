@@ -33,18 +33,13 @@ const Hardscape = () => {
             },
             {
               icon: "🔥",
-              title: "Fire Pits & Outdoor Kitchens",
+              title: "Fire Pits",
               desc: "Custom-built features to gather around with friends and family.",
             },
             {
               icon: "🌳",
               title: "Retaining Walls",
               desc: "Functional and aesthetic support to shape and define your yard.",
-            },
-            {
-              icon: "💧",
-              title: "Water Features",
-              desc: "Add a calming, luxurious touch with fountains or ponds.",
             },
           ].map((item, idx) => (
             <div

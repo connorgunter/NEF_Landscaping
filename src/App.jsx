@@ -3,18 +3,20 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import { useNavigate } from "react-router-dom";
 
+// Importing components
 import Header from "./components/Header/header";
-import Slideshow from "./pages/Slideshow/slideshow";
-import ServicesList from "./pages/ServicesList/serviceslist";
-import Form from "./pages/Form/form";
 import Footer from "./components/Footer/footer";
+import Slideshow from "./components/Slideshow/slideshow";
+import ServicesList from "./components/ServicesList/serviceslist";
 import ContactForm from "./components/ContactForm/ContactForm";
 
+// Importing service pages
 import Maintenance from "./pages/services/Maintenance";
 import Native from "./pages/services/Native";
 import Hardscape from "./pages/services/Hardscape";
-import Contact from "./pages/Contact/Contact"; // ✅ New Contact page import
+import Contact from "./pages/Contact/Contact";
 
+//images for slideshow
 import lawn2 from "./assets/lawn2.jpeg";
 import lawn3 from "./assets/lawn3.jpg";
 import lawn4 from "./assets/lawn4.jpg";

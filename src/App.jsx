@@ -20,8 +20,9 @@ import lawn3 from "./assets/lawn3.jpg";
 import lawn4 from "./assets/lawn4.jpg";
 import lawn5 from "./assets/lawn5.jpg";
 import lawn6 from "./assets/lawn6.jpg";
+import lawn7 from "./assets/lawn7.jpg";
 
-const images = [lawn2, lawn3, lawn4, lawn5, lawn6];
+const images = [lawn2, lawn3, lawn4, lawn5, lawn6, lawn7];
 
 function App() {
   const location = useLocation();

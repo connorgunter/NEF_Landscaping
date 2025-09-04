@@ -38,6 +38,7 @@
   }
   
   .homepage-contact-form input[name="phone"],
+  .homepage-contact-form input[name="serviceAddress"],
   .homepage-contact-form textarea,
   .homepage-contact-form button {
     grid-column: span 2;

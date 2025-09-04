@@ -27,6 +27,7 @@ const ContactForm = () => {
         <input type="text" name="name" placeholder="Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="text" name="serviceAddress" placeholder="Service Address" required />
         <textarea
           name="message"
           placeholder="How can we help you?"

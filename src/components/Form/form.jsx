@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUser, FaEnvelope, FaPhone, FaCommentDots } from "react-icons/fa";
+import { FaUser, FaEnvelope, FaPhone, FaCommentDots, FaMapMarkerAlt } from "react-icons/fa";
 import "./form.css";
 
 const Form = () => (
@@ -34,6 +34,12 @@ const Form = () => (
         <FaPhone className="form-icon" />
         <input type="tel" name="phone" id="phone" required placeholder=" " />
         <label htmlFor="phone">Phone Number</label>
+      </div>
+
+      <div className="form-group">
+        <FaMapMarkerAlt className="form-icon" />
+        <input type="text" name="serviceAddress" id="serviceAddress" required placeholder=" " />
+        <label htmlFor="serviceAddress">Service Address</label>
       </div>
 
       <div className="form-group textarea-group">

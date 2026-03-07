@@ -83,7 +83,7 @@
 }
 
 .img-1 {
-  object-position: bottom; /* slide 1 centered */
+  object-position: center; /* slide 1 centered */
 }
 
 .img-2 {
@@ -91,11 +91,15 @@
 }
 
 .img-3 {
-  object-position: bottom; /* slide 3 shows top more */
+  object-position: center; /* slide 3 shows top more */
 }
 
 .img-4 {
   object-position: center 65%;
+}
+
+.img-5 {
+  object-position: center 72%;
 }
 
 

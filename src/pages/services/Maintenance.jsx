@@ -18,10 +18,10 @@ import "./maintenance.css";
 
 import m1 from "../../assets/before1.jpg";
 import m2 from "../../assets/after1.jpg";
-import m3 from "../../assets/before2.jpg";
-import m4 from "../../assets/after2.jpg";
-import m5 from "../../assets/before3.jpg";
-import m6 from "../../assets/after3.jpg";
+import m3 from "../../assets/before5.jpg";
+import m4 from "../../assets/after5.jpg";
+import m5 from "../../assets/before6.jpg";
+import m6 from "../../assets/after6.jpg";
 
 const Maintenance = () => {
   const [isMobile, setIsMobile] = useState(false);

@@ -19,7 +19,7 @@ import Contact from "./pages/Contact/Contact";
 //images for slideshow
 import lawn from "./assets/lawn.jpeg";
 import lawn2 from "./assets/lawn2.jpeg";
-import lawn3 from "./assets/lawn3.jpg";
+import lawn3 from "./assets/lawn3.jpeg";
 import lawn4 from "./assets/lawn4.jpg";
 import lawn5 from "./assets/lawn5.jpg";
 import lawn6 from "./assets/lawn6.png";

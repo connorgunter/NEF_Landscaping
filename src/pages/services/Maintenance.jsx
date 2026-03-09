@@ -5,12 +5,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import { Pagination } from "swiper/modules";
-import "swiper/css/pagination";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
@@ -22,6 +21,9 @@ import m3 from "../../assets/before5.jpg";
 import m4 from "../../assets/after5.jpg";
 import m5 from "../../assets/before6.jpg";
 import m6 from "../../assets/after6.jpg";
+
+import mowing from "../../assets/maintenance2.jpg";
+import plowing from "../../assets/maintenance.png";
 
 const Maintenance = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -35,11 +37,50 @@ const Maintenance = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const slides = [
+    {
+      before: m1,
+      after: m2,
+      caption: "Detailed cleanup for a refreshed landscape.",
+      showLabels: true,
+    },
+    {
+      before: m3,
+      after: m4,
+      caption: "Transforming overgrown lawns into manicured spaces.",
+      showLabels: true,
+    },
+    {
+      before: m5,
+      after: m6,
+      caption: "From patchy and tired to clean, crisp, and cared for.",
+      showLabels: true,
+    },
+
+    // mowing showcase
+    {
+      before: mowing,
+      after: mowing,
+      caption: "Professional weekly mowing keeps lawns healthy and sharp.",
+      showLabels: false,
+    },
+
+    // plowing showcase
+    {
+      before: plowing,
+      after: plowing,
+      caption: "Reliable maintenance services year round!",
+      showLabels: false,
+    },
+  ];
+
   return (
     <>
       <Header />
+
       <div className="service-detail">
         <h1>Maintenance Services</h1>
+
         <p className="intro">
           NEF provides complete landscape care so your property always looks its
           best. Our experienced team handles routine mowing, seasonal cleanups
@@ -57,32 +98,32 @@ const Maintenance = () => {
           pagination={{ clickable: true }}
           className="before-after-carousel"
         >
-          {[
-            {
-              before: m1,
-              after: m2,
-              caption: "Detailed cleanup for a refreshed landscape.",
-            },
-            {
-              before: m3,
-              after: m4,
-              caption: "Transforming overgrown lawns into manicured spaces.",
-            },
-            {
-              before: m5,
-              after: m6,
-              caption: "From patchy and tired to clean, crisp, and cared for.",
-            },
-          ].map((slide, index) => (
+          {slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="before-after-container">
-                <div className="before-after-image" data-label="Before">
-                  <img src={slide.before} alt="Before service" loading="lazy" />
+                <div
+                  className="before-after-image"
+                  {...(slide.showLabels ? { "data-label": "Before" } : {})}
+                >
+                  <img
+                    src={slide.before}
+                    alt="Landscape service"
+                    loading="lazy"
+                  />
                 </div>
-                <div className="before-after-image" data-label="After">
-                  <img src={slide.after} alt="After service" loading="lazy" />
+
+                <div
+                  className="before-after-image"
+                  {...(slide.showLabels ? { "data-label": "After" } : {})}
+                >
+                  <img
+                    src={slide.after}
+                    alt="Landscape service"
+                    loading="lazy"
+                  />
                 </div>
               </div>
+
               <p className="before-after-desc">{slide.caption}</p>
             </SwiperSlide>
           ))}
@@ -130,6 +171,7 @@ const Maintenance = () => {
           </Link>
         </div>
       </div>
+
       <Footer />
     </>
   );

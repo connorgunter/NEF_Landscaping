@@ -27,6 +27,8 @@ body {
   color: #444;
 }
 
+/* OFFERING GRID */
+
 .offering-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -44,16 +46,10 @@ body {
   border-left: 5px solid #39b98f;
   padding: 20px 25px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, background 0.3s ease;
+  transition: transform 0.25s ease;
   border-radius: 10px;
   text-align: center;
 }
-
-/* .offering-list li:hover,
-.offering-item:hover {
-  transform: translateY(-5px);
-  background: #eefdf8;
-} */
 
 .offering-list li h3,
 .offering-item h3 {
@@ -76,14 +72,7 @@ body {
   color: #39b98f;
 }
 
-.before-after {
-  margin-bottom: 80px;
-  text-align: center;
-  background: #ffffff;
-  padding: 40px 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
-}
+/* BEFORE / AFTER SECTION */
 
 .before-after-container {
   display: flex;
@@ -100,13 +89,13 @@ body {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.35s ease;
   flex: 1;
   max-width: 48%;
 }
 
 .before-after-image:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .before-after-image img {
@@ -116,7 +105,9 @@ body {
   border-radius: 12px;
 }
 
-.before-after-image::after {
+/* LABELS */
+
+.before-after-image[data-label]::after {
   content: attr(data-label);
   position: absolute;
   top: 15px;
@@ -124,12 +115,14 @@ body {
   background: rgba(23, 76, 60, 0.85);
   color: white;
   padding: 6px 12px;
-  border-radius: 4px;
+  border-radius: 5px;
   font-weight: 600;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+
+/* CAPTION */
 
 .before-after-desc {
   font-size: 1.05rem;
@@ -140,6 +133,8 @@ body {
   padding: 0 10px;
   text-align: center;
 }
+
+/* SWIPER */
 
 .before-after-carousel {
   margin: 80px 0 40px;
@@ -152,6 +147,8 @@ body {
   align-items: center;
 }
 
+/* NAV BUTTONS */
+
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
@@ -159,11 +156,11 @@ body {
   transform: translateY(-50%);
   z-index: 5;
   background: rgba(255, 255, 255, 0.9);
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   color: #174c3c;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .before-after-carousel .swiper-button-prev {
@@ -179,6 +176,8 @@ body {
   font-size: 18px;
 }
 
+/* MOBILE */
+
 @media (max-width: 768px) {
   .before-after-container {
     flex-direction: column;
@@ -193,6 +192,8 @@ body {
     display: none !important;
   }
 }
+
+/* CTA */
 
 .cta-wrapper {
   text-align: center;
@@ -215,13 +216,14 @@ body {
   background-color: #2fa57a;
 }
 
+/* PAGINATION */
+
 .swiper-pagination-bullets {
   margin-top: 40px;
   text-align: center;
   position: relative;
   z-index: 1;
 }
-
 
 .swiper-pagination-bullet {
   background: #2fa57a;

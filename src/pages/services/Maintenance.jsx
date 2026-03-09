@@ -57,17 +57,9 @@ const Maintenance = () => {
       showLabels: true,
     },
 
-    // mowing showcase
-    {
-      before: mowing,
-      after: mowing,
-      caption: "Professional weekly mowing keeps lawns healthy and sharp.",
-      showLabels: false,
-    },
-
     // plowing showcase
     {
-      before: plowing,
+      before: mowing,
       after: plowing,
       caption: "Reliable maintenance services year round!",
       showLabels: false,

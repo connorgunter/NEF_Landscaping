@@ -107,7 +107,8 @@ body {
 
 /* LABELS */
 
-.before-after-image[data-label]::after {
+
+.before-after-image::after {
   content: attr(data-label);
   position: absolute;
   top: 15px;
@@ -120,6 +121,15 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+
+  /* hide by default */
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* only show when label actually exists */
+.before-after-image[data-label]:not([data-label=""])::after {
+  opacity: 1;
 }
 
 /* CAPTION */

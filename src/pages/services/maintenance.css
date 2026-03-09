@@ -35,6 +35,7 @@ body {
   list-style-type: none;
   padding: 0;
   max-width: 900px;
+  margin: 0 auto 60px;
 }
 
 .offering-list li,
@@ -48,11 +49,11 @@ body {
   text-align: center;
 }
 
-.offering-list li:hover,
+/* .offering-list li:hover,
 .offering-item:hover {
   transform: translateY(-5px);
   background: #eefdf8;
-}
+} */
 
 .offering-list li h3,
 .offering-item h3 {

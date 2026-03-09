@@ -5,9 +5,18 @@ import { Link } from "react-router-dom";
 
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
+import Slideshow from "../../components/Slideshow/slideshow";
+
 import "./native.css";
 
+import n1 from "../../assets/native1.jpg";
+import n2 from "../../assets/native2.jpg";
+import n3 from "../../assets/native3.jpg";
+import n4 from "../../assets/native4.jpg";
+
 const Native = () => {
+  const nativeSlides = [n1, n2, n3, n4];
+
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -17,12 +26,16 @@ const Native = () => {
       <Header />
       <div className="native-page">
         <h1 className="native-title">Native Plant Landscaping</h1>
+
         <p className="native-intro" data-aos="fade-up">
           Native plants are the backbone of sustainable landscaping—requiring
           less water, supporting wildlife, and thriving naturally in our
           environment. At NEF, we help create thriving, low-maintenance gardens
           that support local ecosystems.
         </p>
+        <div className="native-slideshow">
+          <Slideshow images={nativeSlides} />
+        </div>
 
         <div className="native-benefits">
           {[
@@ -62,15 +75,18 @@ const Native = () => {
 
         <div className="native-examples" data-aos="fade-up">
           <h2>Example Garden Concepts</h2>
+
           <div className="examples-grid">
             <div className="example">
               <h4>Pollinator Garden</h4>
               <p>Milkweed, Echinacea, Bee Balm — a haven for butterflies 🐝</p>
             </div>
+
             <div className="example">
               <h4>Woodland Shade Garden</h4>
               <p>Wild ginger, Ferns, Red Columbine — peaceful and shady 🌳</p>
             </div>
+
             <div className="example">
               <h4>Drought-Tolerant Prairie</h4>
               <p>Little bluestem, Yucca, Coneflower — built for sun ☀️</p>
@@ -84,6 +100,7 @@ const Native = () => {
           </Link>
         </div>
       </div>
+
       <Footer />
     </>
   );

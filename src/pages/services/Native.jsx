@@ -16,9 +16,13 @@ import n4 from "../../assets/native4.jpg";
 import n5 from "../../assets/native5.jpg";
 import n6 from "../../assets/native6.jpg";
 import n7 from "../../assets/native7.jpg";
+import n8 from "../../assets/native8.png";
+import n9 from "../../assets/native9.png";
+import n10 from "../../assets/native10.jpg";
+import n11 from "../../assets/native11.jpg";
 
 const Native = () => {
-  const nativeSlides = [n1, n2, n3, n4, n5, n6, n7];
+  const nativeSlides = [n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11];
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });

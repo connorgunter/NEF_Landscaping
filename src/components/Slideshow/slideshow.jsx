@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./slideshow.css";
 
-const Slideshow = ({ images, interval = 3000 }) => {
+const Slideshow = ({ images, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex(prev => (prev + 1) % images.length);
+      setCurrentIndex((prev) => (prev + 1) % images.length);
     }, interval);
     return () => clearInterval(timer);
   }, [images.length, interval]);
@@ -31,11 +31,17 @@ const Slideshow = ({ images, interval = 3000 }) => {
             key={index}
             src={img}
             alt={`Slide ${index}`}
-            className={`slider-image ${index === currentIndex ? "active" : ""} img-${index}`}
+            className={`slider-image ${
+              index === currentIndex ? "active" : ""
+            } img-${index}`}
           />
         ))}
-        <button className="nav-button prev" onClick={goToPrev}>&#10094;</button>
-        <button className="nav-button next" onClick={goToNext}>&#10095;</button>
+        <button className="nav-button prev" onClick={goToPrev}>
+          &#10094;
+        </button>
+        <button className="nav-button next" onClick={goToNext}>
+          &#10095;
+        </button>
       </div>
       <div className="dots-container">
         {images.map((_, index) => (

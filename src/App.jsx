@@ -23,12 +23,19 @@ import lawn3 from "./assets/lawn3.jpeg";
 import lawn4 from "./assets/lawn4.jpg";
 import lawn5 from "./assets/lawn5.jpg";
 import lawn6 from "./assets/lawn6.png";
-// import lawn7 from "./assets/lawn7.jpg";
-// import lawn8 from "./assets/lawn8.jpg";
-// import lawn9 from "./assets/lawn9.jpeg";
-// import lawn10 from "./assets/lawn10.png";
+import frontpage1 from "./assets/frontpage.PNG";
+import frontpage2 from "./assets/frontpage2.jpeg";
 
-const images = [lawn, lawn2, lawn3, lawn4, lawn5, lawn6];
+const images = [
+  lawn,
+  lawn2,
+  lawn3,
+  lawn4,
+  lawn5,
+  lawn6,
+  frontpage1,
+  frontpage2,
+];
 
 function App() {
   const location = useLocation();
